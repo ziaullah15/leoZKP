@@ -1,0 +1,196 @@
+/* @font-face {
+  font-family: "Lato Thin";
+  src: url("Lato-Thin.ttf") format("truetype");
+} */
+
+@font-face {
+  font-family: "ClashGrotest-Bold";
+  src: url("./ClashGrotesk_Complete/Fonts/Variable/ClashGrotesk-Variable.ttf") format("truetype");
+}
+/* @font-face {
+  font-family: "Catellos Demo";
+  src: url("Catellos-Demo.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "lucida calligraphy italic";
+  src: url("lucida-calligraphy-italic.ttf") format("truetype");
+}
+
+
+@font-face {
+  font-family: "Lato Light";
+  src: url("Lato-Light.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Lato Regular";
+  src: url("Lato-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Lato Bold";
+  src: url("Lato-Bold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Lato Extra Bold";
+  src: url("Lato-Black.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Lato Regular";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Lato Regular"), url("Lato-Regular.ttf") format("truetype");
+} */
+
+body{
+  font-family: "ClashGrotest";
+}
+.font-clash{
+  font-family: ClashGrotest-Bold !important;
+}
+.font-catellos-demo {
+  font-family: "Catellos Demo";
+}
+.font-lucida-calligraphy-italic {
+  font-family: "lucida calligraphy italic";
+}
+.font-sans-thin {
+  font-family: "Lato Thin";
+}
+.font-sans-light {
+  font-family: "Lato Light";
+}
+.font-sans-regular {
+  font-family: "Lato Regular";
+}
+.font-sans-bold {
+  font-family: "Lato Bold";
+}
+.font-sans-extra-bold {
+  font-family: "Lato Extra Bold";
+}
+.font-12 {
+  font-size: 12px;
+}
+.font-10 {
+  font-size: 10px;
+}
+.font-14 {
+  font-size: 14px;
+}
+.font-16 {
+  font-size: 16px;
+}
+.font-18 {
+  font-size: 18px;
+}
+.font-20 {
+  font-size: 20px;
+}
+.font-22 {
+  font-size: 22px;
+}
+.font-24 {
+  font-size: 24px;
+}
+.font-26 {
+  font-size: 26px;
+}
+.font-28 {
+  font-size: 28px;
+}
+.font-30 {
+  font-size: 30px;
+}
+.font-32 {
+  font-size: 32px;
+}
+.font-34 {
+  font-size: 34px;
+}
+.font-36 {
+  font-size: 36px;
+}
+.font-38 {
+  font-size: 38px;
+}
+.font-40 {
+  font-size: 40px;
+}
+.font-42 {
+  font-size: 42px;
+}
+.font-44 {
+  font-size: 44px;
+}
+.font-46 {
+  font-size: 46px;
+}
+.font-48 {
+  font-size: 48px;
+}
+.font-50 {
+  font-size: 50px;
+}
+.font-52 {
+  font-size: 52px;
+}
+.font-54 {
+  font-size: 54px;
+}
+.font-56 {
+  font-size: 56px;
+}
+.font-58 {
+  font-size: 58px;
+}
+.font-60 {
+  font-size: 60px;
+}
+.font-w-100 {
+  font-weight: 100;
+}
+.font-w-200 {
+  font-weight: 200;
+}
+.font-w-300 {
+  font-weight: 300;
+}
+.font-w-400 {
+  font-weight: 400;
+}
+.font-w-500 {
+  font-weight: 500;
+}
+.font-w-600 {
+  font-weight: 600;
+}
+.font-w-700 {
+  font-weight: 700;
+}
+.font-w-800 {
+  font-weight: 800;
+}
+.font-w-900 {
+  font-weight: 900;
+}
+.text-color-38393b {
+  color: #38393b;
+}
+.text-color-0F3366 {
+  color: #0F3366;
+}
+.text-color-317FFF {
+  color: #317FFF;
+}
+.text-color-a6e1fb {
+  color: #a6e1fb;
+}
+.text-color-545454 {
+  color: #545454;
+}
+.text-color-ffffff {
+  color: #ffffff;
+}
+.text-color-b9b9b9 {
+  color: #b9b9b9;
+}

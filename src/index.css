@@ -1,0 +1,354 @@
+/* Global Variables */
+:root {
+  --primary-color: #007aff;
+  --primary-dark: #0051a2;
+  --background-color: #f5f6fa;
+  --font-color: #2c3e50;
+  --neutral-light: #e0e0e0;
+  --neutral-dark: #242424;
+  --border-color: #d1d1d1;
+  /* --font-family: 'Inter', system-ui, Avenir, Helvetica, Arial, sans-serif; */
+  /* --font-family: "Clash Grotesk Variable" */
+}
+
+@font-face {
+  font-family: "ClashGrotest";
+  src: url("./assets/fonts/ClashGrotesk_Complete/Fonts/Variable/ClashGrotesk-Variable.ttf") format("truetype");
+}
+@font-face {
+  font-family: "ClashGrotest-Bold";
+  src: url("./assets/fonts/ClashGrotesk_Complete/Fonts/Variable/ClashGrotesk-Variable.ttf") format("truetype");
+}
+
+
+
+body {
+
+  font-family: "ClashGrotest";
+
+  background-color: var(--background-color);
+  color: var(--font-color);
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  line-height: 1.6;
+}
+code {
+  font-family: "ClashGrotest";
+}
+/* Module Wrapper */
+.module-wrapper {
+  width: 800px;
+  height: 600px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #fff;
+  overflow: hidden;
+}
+
+/* Interaction Panel */
+.interaction-panel {
+  flex-grow: 1;
+  padding: 20px;
+  overflow-y: auto;
+}
+
+/* Navigation Buttons */
+.nav-buttons {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px;
+  border-top: 1px solid var(--border-color);
+  background-color: var(--background-color);
+}
+
+/* Adjust logo for the module */
+.logo {
+  max-width: 40px;
+  margin: 0 15px;
+  /* Combined the margin from both the defined .logo styles */
+}
+
+.container {
+  max-width: 1140px;
+  padding: 20px;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+
+.copyable-address {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 200px;
+  /* Adjust as needed */
+}
+
+
+.header,
+.footer {
+  max-width: 1140px;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+}
+
+.header {
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+.footer {
+  flex-direction: column;
+  text-align: center;
+  font-size: 0.9em;
+  margin-top: 60px;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+  border-radius: 8px;
+  backdrop-filter: blur(10px);
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.button {
+  padding: 12px 30px;
+  border: none;
+  background-color: var(--primary-color);
+  color: #ffffff;
+  border-radius: 8px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  margin: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.button:hover {
+  background-color: var(--primary-dark);
+  transform: translateY(-2px);
+}
+
+.button:disabled {
+  background-color: var(--neutral-light);
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+.column label {
+  margin-bottom: 10px;
+}
+
+.column input {
+  padding: 10px;
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  font-size: 16px;
+  width: 100%;
+}
+
+/* ... other styles ... */
+
+.home-div {
+  height: 100vh;
+  width: 100vw;
+  background-color: #2c0689;
+  background-image: url("../src/assets/background.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.divider {
+  width: 1px;
+  border: 1px solid #d4d4d4;
+  height: 400px;
+  margin: 0px 50px;
+}
+
+.scan-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 8px 16px;
+  height: 100%;
+  width: 100%;
+}
+
+.scan-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "ClashGrotest";
+  padding: 30px;
+}
+
+.issue-image {
+  margin-bottom: 16px;
+  height: 80px;
+  width: 80px;
+  margin-top: 40px;
+}
+
+.coming-soon-text {
+  margin-top: 10px !important;
+  color: #481fad;
+  font-family: "ClashGrotest";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.scan-button {
+  display: flex;
+  width: 194px;
+  padding: 28px 100px;
+  justify-content: center;
+  background-color: #bbbbbb;
+  font-family: "ClashGrotest";
+  color: #ffffff;
+  align-items: center;
+  gap: 10px;
+}
+
+.scan-issue-button {
+  display: flex;
+  width: 194px;
+  padding: 28px 100px;
+  font-family: "ClashGrotest";
+  justify-content: center;
+  background-color: #2c0689;
+  color: #ffffff;
+  align-items: center;
+  gap: 10px;
+}
+
+.form-style {
+  /* max-width: "500px"; */
+  width: 85%;
+  min-width: 300px;
+}
+
+.form-button {
+  display: flex;
+  padding: 28px 163px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  font-size: 16px;
+  letter-spacing: 1;
+  width: 100%;
+  font-family: "ClashGrotest";
+  /* background-color: #2c0689; */
+
+  background: linear-gradient(270deg, #7244e3 -116.32%, #2c0689 218.07%);
+  color: #ffffff;
+  margin-top: 8px !important;
+}
+
+.form-button:hover {
+  color: #ffffff !important;
+}
+
+.font-clash {
+  font-family: ClashGrotest-Bold !important;
+}
+
+.title-style {
+  color: #808080;
+  leading-trim: both;
+  text-edge: cap;
+  font-family: "ClashGrotest";
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.scan-image {
+  margin-bottom: 16px;
+  height: 120px;
+  width: 120px;
+  margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+  .scan-card {
+    height: auto;
+    /* Remove fixed height */
+    width: auto;
+    margin: "20px" !important;
+  }
+
+  .ant-card-body {
+    padding: 10px;
+  }
+
+  .scan-item {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .scan-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .divider {
+    display: none;
+    /* Hide the divider on smaller screens */
+  }
+
+
+
+  .scan-image {
+    margin-bottom: 12px;
+    height: 80px;
+    /* Decrease image size */
+    width: 80px;
+    /* Decrease image size */
+  }
+
+  .form-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px !important;
+    width: auto;
+    font-size: 16px;
+    background: linear-gradient(270deg, #7244e3 -116.32%, #2c0689 218.07%);
+    color: #ffffff;
+    margin-top: 8px !important;
+  }
+}
+
+@media (max-width: 450px) {
+  .home-div {
+    padding: 10% !important;
+  }
+
+  .ant-form {
+    padding: 0px;
+    max-width: 300px;
+  }
+}
