@@ -163,7 +163,7 @@ function IssuerDetail({
           >
             <p className="issuer-detail coming-soon-text fw-bold">
               {dob !== ""
-                ? moment(dob).format("YYYY-MM-DD") // Format the date as desired
+                ? dob.format("YYYY-MM-DD") // Format the date as desired
                 : ""}
             </p>
           </Form.Item>
@@ -186,7 +186,7 @@ function IssuerDetail({
               },
             ]}
           >
-            <p className="issuer-detail coming-soon-text fw-bold">2026</p>
+            <p className="issuer-detail coming-soon-text fw-bold">{expiration}</p>
           </Form.Item>{" "}
           <Form.Item
             label={
